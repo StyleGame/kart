@@ -1,5 +1,7 @@
 import requests,json,random,string,termcolor,time,pyfiglet,sys,os
 from bs4 import BeautifulSoup
+from flask import *
+app = Flask(__name__)
 with requests.Session() as req:
     def generationLink(stringLingth):
         latters = string.ascii_lowercase
@@ -66,3 +68,7 @@ hed = {
 
 r = requests.get('https://web.vodafone.com.eg/services/dxl/ramadanpromo/promotion?@type=RamadanHub&channel=website&msisdn=01000000000',headers=hed).text
 print(r)
+
+
+if __name__ == "__main__":
+    app.run()
