@@ -1,6 +1,4 @@
 requests
-random
 string
-termcolor
 time
 pyfiglet
