@@ -1,1 +1,7 @@
-requests,json,random,string,termcolor,time,pyfiglet
+requests
+json
+random
+string
+termcolor
+time
+pyfiglet
